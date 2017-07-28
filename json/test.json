@@ -1,0 +1,579 @@
+{
+   "contents":[
+      {
+         "SLNO":"1",
+         "SuccessCriteria":"1.1.1 Non-text Content",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Alt text is missing for graphic",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"2",
+         "SuccessCriteria":"1.1.1 Non-text Content",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Alt textis not appropriate OR descriptive for the graphic",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"3",
+         "SuccessCriteria":"1.1.1 Non-text Content",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Missing alt text for image buttons",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"4",
+         "SuccessCriteria":"1.1.1 Non-text Content",
+         "ConformanceLevel":"A",
+         "IssueDescription":"No text alternative for flow chart concept map etc.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"5",
+         "SuccessCriteria":"1.1.1 Non-text Content",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Missing alt text for image map hot spot ",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"6",
+         "SuccessCriteria":"1.1.1 Non-text Content",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Missing label for controls. ",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"7",
+         "SuccessCriteria":"1.1.1 Non-text Content",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Filenames that are not valid text alternatives in their own right such as Oct.jpg or Chart.jpg or sales\\\\oct\\\\top3.jpg",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"8",
+         "SuccessCriteria":"1.1.1 Non-text Content",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Using placeholders instead of label ",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"9",
+         "SuccessCriteria":"1.2.1 Audio-only and Video-only (Prerecorded)",
+         "ConformanceLevel":"A",
+         "IssueDescription":"No text transcript for audio only file",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"10",
+         "SuccessCriteria":"1.2.1 Audio-only and Video-only (Prerecorded)",
+         "ConformanceLevel":"A",
+         "IssueDescription":"No alternative text format or no Audio description for video only file",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"11",
+         "SuccessCriteria":"1.2.2 Captions (Prerecorded)",
+         "ConformanceLevel":"A",
+         "IssueDescription":"No caption for pre-recorded audio file",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"12",
+         "SuccessCriteria":"1.2.2 Captions (Prerecorded)",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Captions omitting some dialogue or important sound effects from the original media ",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"13",
+         "SuccessCriteria":"1.2.3 [Audio Description or Media Alternative (Prerecorded)]",
+         "ConformanceLevel":"A",
+         "IssueDescription":"No audio description or media alternative for pre-recorded video ",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"14",
+         "SuccessCriteria":"1.2.4 Captions (Live) ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"Not providing captions for live media. For example webcast ",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"15",
+         "SuccessCriteria":"1.2.5 Audio Description (Prerecorded) ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"No audio description for pre-recorded video ",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"16",
+         "SuccessCriteria":"1.3.1 Info and Relationships ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Missing Unique label for multiple landmark regions with same role ",
+         "SeverityLevel":"Low"
+      },
+      {
+         "SLNO":"17",
+         "SuccessCriteria":"1.3.1 Info and Relationships ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Using semantic elements like Block quotes or heading or UL or DL or etc for formatting purpose ",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"18",
+         "SuccessCriteria":"1.3.1 Info and Relationships",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Instead of using appropriate semantic elements formatting the text to look like a heading or UL or OL or DL etc",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"19",
+         "SuccessCriteria":"1.3.1 Info and Relationships ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Form fields are not associated with the adjacent text using label tag and for attribute ",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"20",
+         "SuccessCriteria":"1.3.1 Info and Relationships ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Form fields are not grouped",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"21",
+         "SuccessCriteria":"1.3.1 Info and Relationships ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Missing caption for table",
+         "SeverityLevel":"medium"
+      },
+      {
+         "SLNO":"22",
+         "SuccessCriteria":"1.3.1 Info and Relationships ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Missing row/column headers",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"23",
+         "SuccessCriteria":"1.3.1 Info and Relationships ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"As a best practice it is better to avoid using nested tables since such tables make it very difficult for a screen reader user to navigate and understand.",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"24",
+         "SuccessCriteria":"1.3.1 Info and Relationships ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Using tables for visual layout is a bad practice but not a WCAG 2.0 AA violation. ",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"25",
+         "SuccessCriteria":"1.3.2 Meaningful Sequence ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Dom order does not match with visual order",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"26",
+         "SuccessCriteria":"1.3.2 Meaningful Sequence ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Heading levels are not in Meaningful Sequence",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"27",
+         "SuccessCriteria":"1.3.2 Meaningful Sequence ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"The logical order is not retained for screen readers and when CSS is turned off.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"28",
+         "SuccessCriteria":"1.3.2 Meaningful Sequence ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Contents in tables are correctly linearized and no empty cells are used to create space in the layout.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"29",
+         "SuccessCriteria":"1.3.2 Meaningful Sequence ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"No character spaces are used to create space in the layout; CSS is used instead.",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"30",
+         "SuccessCriteria":"1.3.2 Meaningful Sequence ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"There is no contextual confusion caused by content positioned with CSS.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"31",
+         "SuccessCriteria":"1.3.3 Sensory Characteristics ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Identifying content only by its shape or location. For example :click on the round button at the top right corner of the screen",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"32",
+         "SuccessCriteria":"1.3.3 Sensory Characteristics ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Using a graphical symbol alone to convey information. For example :PROVIDING A TICK MARK TO INDICATE TO DENOTE THE COMPLETED STEPS.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"33",
+         "SuccessCriteria":"1.4.1 Use of Color ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Marking erroneous field in a form using colour without providing any descriptive textual information ",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"34",
+         "SuccessCriteria":"1.4.2 Audio Control ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"No mechanisim to pause or stop the audio ",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"35",
+         "SuccessCriteria":"1.4.3 Contrast (Minimum) ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"Specifying foreground colors without specifying background colors or vice versa",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"36",
+         "SuccessCriteria":"1.4.3 Contrast (Minimum) ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"Using background images that do not provide sufficient contrast with foreground text (or images of text)",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"37",
+         "SuccessCriteria":"1.4.3 Contrast (Minimum) ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"Not providing sufficient colour contrast while using subtle colour palettes like contrasting light grey versus middle grey or middle pastels versus darks or white versus light cyan (blue-green). ",
+         "SeverityLevel":"high"
+      },
+      {
+         "SLNO":"38",
+         "SuccessCriteria":"1.4.3 Contrast (Minimum) ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"The contrast of many vivid colors (e.g. red/green or blue/orange etc) fail the contras test because they are similar in values in terms of lightness darkness.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"39",
+         "SuccessCriteria":"1.4.4 Resize text ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"When resizing visually rendered text up to 200 percent causes the text or image or controls to be clipped or truncated or obscured",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"40",
+         "SuccessCriteria":"1.4.4 Resize text ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"Text-based form controls do not resize when visually rendered text is resized up to 200%",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"41",
+         "SuccessCriteria":"1.4.5 Images of Text ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"Providing informative text as an image rather than text",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"42",
+         "SuccessCriteria":"Guideline 2.1 (Keyboard accessible)",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Interactive elements missing tab index. The user is unable to navigate to the interactive elements using tab/shift tab key. For Example: links buttons form fields scripted widgets etc.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"43",
+         "SuccessCriteria":"2.1.1 Keyboard ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Unable to activate interactive elements like links or buttons or form controls or scripted widgets etc using only Keyboard.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"44",
+         "SuccessCriteria":"2.1.1 Keyboard ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Access keys conflict with browser or screen reader or operating system short-cut keys. Note: it is better to avoid use of access keys. ",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"45",
+         "SuccessCriteria":"2.1.1 Keyboard ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Unable to navigate to the previous page using back space or alt + left arrow key.",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"46",
+         "SuccessCriteria":"2.1.1 Keyboard ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Unable to close a modal window using only keyboard",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"47",
+         "SuccessCriteria":"2.1.2 No Keyboard Trap: ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Unable to exit the calendar widget using only keyboard",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"48",
+         "SuccessCriteria":"2.1.2 No Keyboard Trap: ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"When any component needs special key commands that is not intimated to the user in advance.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"49",
+         "SuccessCriteria":"2.2.1 Timing Adjustable ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Page getting timed out without prier warning ",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"50",
+         "SuccessCriteria":"2.2.1 Timing Adjustable ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"When the page gets timed out there is no option to extend the time limit.",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"51",
+         "SuccessCriteria":"2.2.2 Pause Stop Hide ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Unable to pause auto rotating carousel ",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"52",
+         "SuccessCriteria":"2.3.1 Three Flashes or Below Threshold ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Web pages do not contain anything that flashes more than three times in any one second period or the flash is below the general flash and red flash thresholds.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"53",
+         "SuccessCriteria":"2.4.1 Bypass Blocks ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"No Landmarks found in the page",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"54",
+         "SuccessCriteria":"2.4.1 Bypass Blocks ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"No headings found in the page",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"55",
+         "SuccessCriteria":"2.4.1 Bypass Blocks ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Skip to main content is not present ",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"56",
+         "SuccessCriteria":"2.4.2 Page Titled ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Page title does not reflect the main content of the page",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"57",
+         "SuccessCriteria":"2.4.2 Page Titled ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Iframe does not have title",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"58",
+         "SuccessCriteria":"2.4.3 Focus Order ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"When the modal gets opened the focus is not set on the first interactive element inside the modal",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"59",
+         "SuccessCriteria":"2.4.3 Focus Order ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Focus does not remain inside the modal dialog while navigating using keyboard.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"60",
+         "SuccessCriteria":"2.4.3 Focus Order ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"The focus does not go back to the triggering element after closing overlay or modal or popup etc",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"61",
+         "SuccessCriteria":"2.4.3 Focus Order ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"The content which is displayed after activating an overlay or popup or modal etc. is not inserted immediately after the triggering element ",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"62",
+         "SuccessCriteria":"2.4.4 Link Purpose (In Context) ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"The link text does not make any sence when read out of context. For example: learn more and click here etc.",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"63",
+         "SuccessCriteria":"2.4.5 Multiple Ways ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"No search mechanism or navigation menus present to navigate with in the web site",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"64",
+         "SuccessCriteria":"2.4.6 Headings and Labels ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"Heading 1 does not reflect the main content of the page ",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"65",
+         "SuccessCriteria":"2.4.7 Focus Visible ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"Terning off the focus indicater with CSS",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"66",
+         "SuccessCriteria":"2.4.7 Focus Visible ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"The outline of elements is visually similar to the focus indicator",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"67",
+         "SuccessCriteria":"2.4.7 Focus Visible ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"Elements have a border that obstructs the focus indicator",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"68",
+         "SuccessCriteria":"3.1.1 Language of Page ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Lang attribute is missing for the entire page",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"69",
+         "SuccessCriteria":"3.1.2 Language of Parts: ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"Lang attribute missing for a perticular element ",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"70",
+         "SuccessCriteria":"3.2.1 On Focus ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"An element getting activated without the user pressing enter or spacebar. example popup getting opened on tab focus while navigating using tab/shift tab key.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"71",
+         "SuccessCriteria":"3.2.2 On Input: ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"The input which user provides triggering a contextual change. For example: in a Language select dropdown when the user navigates using down-arrow automatically the language gets selected and the page refreshes.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"72",
+         "SuccessCriteria":"3.2.3 Consistent Navigation: ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"Skip to main content link is not given at the beginning of the page. Skip to main content link found inside the secondary navigation region after a few links.",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"73",
+         "SuccessCriteria":"3.2.4 Consistent Identification: ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"Elements with the same function do not appear consistently through out the website. Example: (cancel button which has the same function is styled to look like a button in one page and looks like a link in other page.",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"74",
+         "SuccessCriteria":"3.3.1 Error Identification ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Form error identification is not accessible when activate the submit button without filling the required fields or providing incorrect input. the screen reader user does not come to know the error message.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"75",
+         "SuccessCriteria":"3.3.2 Labels or Instructions ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Enough instruction not given to fill the form. Example: in a date input field the expected date format is not given",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"76",
+         "SuccessCriteria":"3.3.3 Error Suggestion: ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"In the error message No additional help or suggestion given to correct the mistake. Example: When the user gives an invalid input in the password edit field the error message which is displayed does not show the invalid characters which are not allowed.",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"77",
+         "SuccessCriteria":"3.3.4 Error Prevention (Legal Financial Data) ",
+         "ConformanceLevel":"AA",
+         "IssueDescription":"No option for the user to review and correct data before submitting",
+         "SeverityLevel":"Medium"
+      },
+      {
+         "SLNO":"78",
+         "SuccessCriteria":"4.1.1 Parsing ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Elements are not properly tagged.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"79",
+         "SuccessCriteria":"4.1.1 Parsing ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Value for ID attribute is not unique ",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"80",
+         "SuccessCriteria":"4.1.2 Name Role Value ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Screen reader does not announce the status. Example expanded/collapsed or pressed or selected etc.",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"81",
+         "SuccessCriteria":"4.1.2 Name Role Value ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Screen reader does not announce the role. Example: button tab menu etc. ",
+         "SeverityLevel":"High"
+      },
+      {
+         "SLNO":"82",
+         "SuccessCriteria":"4.1.2 Name Role Value ",
+         "ConformanceLevel":"A",
+         "IssueDescription":"Screen reader does not announce the value. Example: the currently selected value in a dropdown",
+         "SeverityLevel":"High"
+      }
+   ],
+   "orderCompleted":true
+}

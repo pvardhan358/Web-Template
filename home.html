@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" >
+
+	<head>
+		<link rel="shortcut icon" href="images/ibmfavicon.ico" type="image/x-icon">
+		<title>IBM ACCESSIBILITY</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/jquery.typeahead.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.typeahead.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/jquery.table2excel.js"></script>
+		
+        <script type="text/javascript"  src="./json/test.json"></script> 
+         <script type="text/javascript">
+            
+      var cart = new Array();
+    var Success =new Array();
+	var sl=0;
+	var sv='';
+   // alert(tester);
+  var tester="";
+    
+    url ="https://w3-services1.w3-969.ibm.com/myw3/unified-profile/v1/search/user?searchConfig=optimized_search&rows=24&timeout=2000&query=vvardha2@in.ibm.com"
+
+   jQuery.getJSON(url,function(data){
+      
+tester=data.results[0].nameFull;
+    })
+
+    $.getJSON('./json/test.json',function(data){
+    
+        	cart = data;
+            console.log('json loaded successfully');
+            var arr;
+            for (var i = 0; i < cart.contents.length; i++){
+           arr=(cart.contents[i].IssueDescription).trim();
+           Success.push(arr); 
+            }//console.log(Success);
+        }).error(function(){
+            console.log('error: json not loaded');
+        });
+     
+        </script>
+        
+	</head>
+	<body>
+	<header>
+	<div class="inner">
+	<img alt="IBM Logo" class="col-xs-2" src="images/IBMlogo.jpg" style="width:9%;margin-top:1%"/>
+	<div id="heading" >
+	<h1>WEB ACCESSIBILITY TEMPLATE</h1>
+	</div>
+	
+	</div>
+	</header>
+	<a href="#" class="scrollToTop"></a>
+	
+    <div class="container" id="main" role="main" >
+	<button id="btnDetails" class="btn btn-primary prjDetails" data-toggle="modal" data-target="#myModal1" >Project Details</button>
+    <!-- <button id="btn" class="btn btn-primary" style="max-width:20%;min-width:12%;">Add Issue Details</button> -->
+	<button class="btn hintbtn btn-primary"  data-toggle="modal"  data-target="#myModal" onclick="callJson()">Rule ID Hint</button>
+	<div id="addRow" class="tdata">
+	<div class="container">
+	<form class="form-horizontal" aria-label="issuedescriptions">
+    
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="issue">Issue Description:</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="issue" placeholder="Issue Description" name="issue" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="page">Xpath/Page Element:</label>
+      <div class="col-sm-6">          
+        <input type="text" class="form-control" id="page" placeholder="Xpath/Page Element" name="page" required>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2" for="ruleid">Rule ID:</label>
+      <div class="col-sm-6">          
+        <input type="text" class="form-control" id="rule" placeholder="Rule ID" name="Rule" >
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2" for="WCAG">WCAG Success Criteria:</label>
+      <div class="col-sm-6">          
+        <input type="text" class="form-control" id="wcag" placeholder="WCAG Success Criteria" name="Wcag" >
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2" for="level">Conformance Level:</label>
+      <div class="col-sm-6">          
+        <input type="text" class="form-control" id="level" placeholder="Conformance Level" name="level" >
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2" for="severity">Severity:</label>
+      <div class="col-sm-6">          
+        <input type="text" class="form-control" id="severity" placeholder="Severity" name="severity">
+      </div>
+    </div>
+		<div class="form-group">
+      <label class="control-label col-sm-2" for="comments">Recommendation Fix:</label>
+      <div class="col-sm-6">          
+        <input type="text" class="form-control" id="comments" placeholder="Comments" name="Comments" required>
+      </div>
+    </div>
+    <button id="createNewRow" class="btn btn-primary col-sm-offset-4" onclick="AddTableRow()">Add To Table</button>
+<!-- <label class="btn-bs-file btn btn-primary upload" role="button" >
+                Upload Snippet
+                <input type="file" aria-hidden="true" id="image"/>
+        </label> -->
+	</form>
+	</div>
+	</div>
+	
+<div id="tblscroll">	
+	<table class="table table2excel table-bordered table-condensed noExl" id="table2excel" >
+	
+	
+
+        <tr id="tablerow" style="visibility:hidden">
+		<th style="display:none">SL.No</th>
+          <th>Issue Description</th>
+          <th>Xpath/Page Element</th>
+          <th>Rule ID</th>
+            <th>WCAG Success Criteria</th>
+            <th >Conformance Level</th>
+            <th >Severity</th>
+          <th>Recommendation Fix</th>
+		  <th class="noExl">Edit/Delete</th>
+        </tr>
+    </table> 
+	</div>
+    	<button id="btnExport" class="btn btn-primary" onclick="ExportToExcel()" style="display:none">Export</button>
+    	<button id="send" class="btn btn-primary sendreview" style="display:none" data-toggle="modal" data-target="#myModal2">Send For Review</button>
+		<div class="modal fade" id="myModal1" data-backdrop="static" tabindex="-1">
+	      <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" role="dialog" aria-labelledby="dialog1Title" >
+         
+         
+		<div class="modal-header">
+         
+          <h4 class="modal-title" id="dialog1Title">Project Details</h4>
+		  <button  class="btn-remove btn btncls btn-danger pull-right" style="font-weight:900" aria-label="close icon" data-dismiss="modal">X</button>
+        </div>
+        <div class="modal-body">
+	<div id="addDetails" class="tdata">
+	<div class="container">
+  <form class="form-horizontal" style="margin-right:27%">
+  	<div class="form-group">
+      <label class="control-label col-sm-2" style="text-align:left;" for="prjname">Project Name:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" aria-describedby="info" id="prjname" placeholder="Project Name" name="prjname" required>
+		<p id="info" style="display:none">Please provide project name here</p>
+      </div>
+	</div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" style="text-align:left;" for="pgtitle">Page Title:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="pgtitle" placeholder="Page Title" name="pgtitle" required>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2" style="text-align:left;" for="testurl">Test URL:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="testurl" placeholder="Test URL" name="testurl" required>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2" style="text-align:left;" for="env" >Browser Version / Tools Used:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="env" placeholder="Environment" name="env" required>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2 ">Type Of Testing:</label>
+	  <div class="col-sm-4">
+      <select class="form-control" id="testing">
+		<option value="1" selected >JAWS with IE</option>
+		<option value="2">CCA</option>
+        <option value="3">KEYBOARD</option>
+        <option value="4">NVDA with Firefox</option>
+        <option value="5">RPT</option>
+        <option value="6">WAVE</option>
+      </select>
+	 </div>
+	 </div>
+	<button id="subreport" class="btn btn-primary subreport" onclick="return submitDetails();">Submit Details</button>
+		
+	</form>
+	</div>
+	
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+
+	
+  <!-- Modal -->
+
+  <div class="modal fade" id="myModal" data-backdrop="static" tabindex="-1">
+  
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" role="dialog" aria-labelledby="dialog1Title" >
+         
+		<div class="modal-header">
+         
+          <h4 class="modal-title" id="dialog1Title">Rule ID Hint</h4>
+		  <button  class="btn-remove btn btncls btn-danger pull-right" style="font-weight:900" aria-label="close icon" data-dismiss="modal">X</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+	<div class="well">	
+	
+	<form>
+		
+			<div class="typeahead__container">
+        <div class="typeahead__field">
+        <span class="typeahead__query">
+				<input  class="form-control" name="query" id="query" placeholder="Search" autocomplete="off" type="search">
+				</span>
+			</div>
+			
+			</div><br>
+			<input value="Search" type="button" name="ibm-submit" class="btn searchbtn btn-primary" onclick="saveRule($('#query').val());" />
+			<!--<button type="submit" class="btn searchbtn btn-primary">Search</button>-->
+		
+	</form>
+	</div>
+	</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn clsbtn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ <!--Delete Modal-->
+		
+	<div class="modal fade" id="deletemodal" tabindex="-1" role="dialog" aria-labelledby="delete" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button  class="btn-remove btn btncls btn-danger pull-right" style="font-weight:900" aria-label="close icon" data-dismiss="modal">X</button>
+          <h4 class="modal-title custom_align" id="Heading">Delete this
+						Row</h4>
+        </div>
+        <div class="modal-body">
+
+          <div class="alert alert-danger">
+            <span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Row?
+          </div>
+
+        </div>
+        <div class="modal-footer ">
+          <button type="button" class="btn btn-success" id="confirmdeletebtn">
+            <span class="glyphicon glyphicon-ok-sign"></span> Yes
+          </button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> No
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+	<!-- MailID Modal-->
+	<div class="modal fade" id="myModal2" data-backdrop="static" tabindex="-1">
+	  <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" role="dialog" aria-labelledby="dialog1Title" >
+         
+         
+		<div class="modal-header">
+         
+          <h4 class="modal-title" id="dialog1Title">Send For Review</h4>
+		  <button  class="btn-remove btn btncls btn-danger pull-right" style="font-weight:900" aria-label="close icon" data-dismiss="modal">X</button>
+        </div>
+        <div class="modal-body">
+	
+	<div class="container">
+  <form class="form-horizontal" style="margin-right:27%">
+  	<div class="form-group">
+      <label class="control-label col-sm-2" style="text-align:left;"  for="mailid">Intranet ID:</label>
+      <div class="col-sm-4">
+        <input type="email" class="form-control" aria-describedby="info" id="mailid"  placeholder="Enter Intranet ID" name="Intranet ID" required>
+		<button  class="btn btn-primary addbtn pull-right" >Add</button>
+     
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+    
+		
+
+			
+
+    <footer class="footer">
+        <div class="container">
+            <div id="ftr-wrap">
+                <div class="ftr-links">
+                    <ul>
+                        <li><a href="#">Contact</a></li>     
+                        <li><a href="#">Privacy</a></li>     
+                        <li><a href="#">Terms Of Use</a></li>
+						<li><a href="#">Acessibility</a></li>						
+						<li><a href="#">Feedback</a></li>						
+						<li class="col-xs-6"><img alt="IBM Logo" src="images/IBMlogo.jpg" style="width:13%"/></li>
+					</ul>
+                </div>    
+            </div>
+        </div>
+    </footer>
+	
+	</body>
+</html>
